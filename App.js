@@ -25,7 +25,7 @@ const App = () => {
       let tempBackgroundImageNumber = await AsyncStorage.getItem("backgroundImageNumber");
       let tempProfile = await AsyncStorage.getItem("profile");
 
-      await AsyncStorage.clear();
+      //await AsyncStorage.clear();
 
       const defaultProfile = { profileName: "Dein Name" };
 

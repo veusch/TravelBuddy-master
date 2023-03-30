@@ -9,7 +9,7 @@
       ]
     ],
     "name": "TravelBuddy",
-    "slug": "travel2",
+    "slug": "ttttt",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/logo.png",
@@ -44,9 +44,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "f5ce77f8-fd9f-4202-a846-e02125a3e384"
+        "projectId": "d97311ef-af39-48a4-a307-bc9e937a56d7"
       }
     },
-    "owner": "doisch"
+    "owner": "fuschi"
   }
 }
