@@ -77,6 +77,62 @@ export default function TagReviewCard(props) {
     forceUpdate();
   };
 
+  const defaultReisenImages = (eintragId) => {
+    switch (reiseTagId) {
+      case "mKVZUHJTSH":
+        return eintragId === "44HoHtzUlV" ? (
+          // Bilder vom ersten Tag erster Tagebucheintrag
+          <>
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+          </>
+        ) : eintragId === "duC9h4bveJ" ? (
+          // Bilder vom ersten Tag zweiter Tagebucheintrag
+          <>
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+          </>
+        ) : eintragId === "bLQxePLuK2" ? (
+          // Bilder vom ersten Tag dritter Tagebucheintrag
+          <>
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+          </>
+        ) : null;
+        break;
+      case "zSwKCBsZNy":
+        return eintragId === "1h5j3d9hcu" ? (
+          // Bilder vom zweiten Tag erster Tagebucheintrag
+          <>
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+          </>
+        ) : eintragId === "J7gU44Fghz" ? (
+          // Bilder vom zweiten Tag zweiter Tagebucheintrag
+          <>
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+          </>
+        ) : null;
+        break;
+      case "UkH7vq8mEW":
+        return eintragId === "djue67d6hD" ? (
+          // Bilder vom dritten Tag erster Tagebucheintrag
+          <>
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+          </>
+        ) : eintragId === "j3hg7HUi4a" ? (
+          // Bilder vom dritten Tag zweiter Tagebucheintrag
+          <>
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+          </>
+        ) : null;
+        break;
+    }
+  };
+
   return (
     <View style={styles.container}>
       <Image
@@ -132,11 +188,7 @@ export default function TagReviewCard(props) {
                   <Text style={styles.zusammenfassung2}>{new Date(reiseEntry.tagebuchEintragTime).toLocaleTimeString("en-US")} Uhr</Text>
                   <Text style={styles.zusammenfassung2}>{reiseEntry.tagebucheintragBody}</Text>
                   <View style={{ alignItems: "center" }}>
-                    {reisen?.find((reise) => reise.reiseId === reiseId).defaultReise ? (
-                      <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
-                    ) : (
-                      reiseEntry?.tagebuchEintragImages?.map((image) => <Image key={image} style={{ margin: 10, height: 270, width: 200 }} source={{ uri: image }} />)
-                    )}
+                    {reiseId === "Iyxnkg6cLQ" ? defaultReisenImages(reiseEntry.tagebuchEintragId) : reiseEntry?.tagebuchEintragImages?.map((image) => <Image key={image} style={{ margin: 10, height: 270, width: 200 }} source={{ uri: image }} />)}
                   </View>
                   <StarRatingg forceUpdate={forceUpdate} defaultRating={reiseEntry.rating ?? 0} tagebuchEintragId={reiseEntry.tagebuchEintragId} setRating={setRating} />
                 </CollapseBody>

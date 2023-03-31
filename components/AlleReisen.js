@@ -35,7 +35,7 @@ export default function AlleReisen({ children, navigation, setModalOpen }) {
         >
           {item.thumbnail ? (
             <Image style={{ borderRadius: 20, left: 0, opacity: 0.75, height: "100%", width: "100%", position: "absolute", resizeMode: "cover" }} source={{ uri: item.thumbnail }} />
-          ) : item.defaultReise ? (
+          ) : item.reiseId === "Iyxnkg6cLQ" ? (
             <Image style={{ borderRadius: 20, left: 0, opacity: 0.75, height: "100%", width: "100%", position: "absolute", resizeMode: "cover" }} source={require("../images/demo/nr2.png")} />
           ) : null}
           {/* {item.thumbnail && <View style={{ height: 100, width: 100, backgroundColor: "red" }} />} */}

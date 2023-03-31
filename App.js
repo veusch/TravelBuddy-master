@@ -31,7 +31,6 @@ const App = () => {
 
       const defaultReisen = [
         {
-          defaultReise: true,
           startDate: "2023-03-26T17:09:20.187Z",
           endDate: "2023-03-28T17:09:20.187Z",
           reiseTitel: "Barcelona",
@@ -77,7 +76,7 @@ const App = () => {
               reiseTagDate: "2023-03-27T17:09:20.187Z",
               reiseEntries: [
                 {
-                  tagebuchEintragId: "44HoZtzUlV",
+                  tagebuchEintragId: "1h5j3d9hcu",
                   tagebuchEintragTime: "2023-03-26T17:13:09.962Z",
                   tagebuchEintragZiel: "",
                   tagebucheintragTitle: "Aquarium",
@@ -86,7 +85,7 @@ const App = () => {
                   rating: 5,
                 },
                 {
-                  tagebuchEintragId: "duC9h4bveJ",
+                  tagebuchEintragId: "J7gU44Fghz",
                   tagebuchEintragTime: "2023-03-26T17:16:29.241Z",
                   tagebuchEintragZiel: "",
                   tagebucheintragTitle: "Sagrada",
@@ -101,17 +100,16 @@ const App = () => {
               reiseTagDate: "2023-03-28T17:09:20.187Z",
               reiseEntries: [
                 {
-                  tagebuchEintragId: "44HoZtzUlV",
+                  tagebuchEintragId: "djue67d6hD",
                   tagebuchEintragTime: "2023-03-26T17:13:09.962Z",
                   tagebuchEintragZiel: "",
-
                   tagebucheintragTitle: "Strand",
                   tagebucheintragBody:
                     "Am vorletzten Tag unseres Aufenthalts haben wir uns eine köstliche Pizza gegönnt und ein Picknick an der Strandpromenade gemacht. Währenddessen bemerkten wir, dass der katalanische Nationalfeiertag begangen wurde. Die ganze Stadt war geschmückt und es fand ein großer Umzug statt. Wir beschlossen spontan, daran teilzunehmen und uns ein Stück des Zuges anzuschließen. Schließlich kamen wir in der Nähe des Strandes an und beschlossen, eine erfrischende Schwimmrunde zu drehen und den Rest des Tages am Strand zu verbringen. Am Abend unternahmen wir noch einen letzten Ausflug in einen Club und ließen den Abend anschließend beim Schwimmen am Strand ausklingen. Danach fuhren wir zurück zur Unterkunft und begannen damit, unsere Sachen für die Abreise zu packen.",
                   rating: 5,
                 },
                 {
-                  tagebuchEintragId: "duC9h4bveJ",
+                  tagebuchEintragId: "j3hg7HUi4a",
                   tagebuchEintragTime: "2023-03-26T17:16:29.241Z",
                   tagebuchEintragZiel: "",
                   tagebucheintragTitle: "Abreise",
