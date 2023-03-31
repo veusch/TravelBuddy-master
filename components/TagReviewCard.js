@@ -132,9 +132,11 @@ export default function TagReviewCard(props) {
                   <Text style={styles.zusammenfassung2}>{new Date(reiseEntry.tagebuchEintragTime).toLocaleTimeString("en-US")} Uhr</Text>
                   <Text style={styles.zusammenfassung2}>{reiseEntry.tagebucheintragBody}</Text>
                   <View style={{ alignItems: "center" }}>
-                    {reiseEntry?.tagebuchEintragImages?.map((image) => (
-                      <Image key={image} style={{ margin: 10, height: 270, width: 200 }} source={{ uri: image }} />
-                    ))}
+                    {reisen?.find((reise) => reise.reiseId === reiseId).defaultReise ? (
+                      <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+                    ) : (
+                      reiseEntry?.tagebuchEintragImages?.map((image) => <Image key={image} style={{ margin: 10, height: 270, width: 200 }} source={{ uri: image }} />)
+                    )}
                   </View>
                   <StarRatingg forceUpdate={forceUpdate} defaultRating={reiseEntry.rating ?? 0} tagebuchEintragId={reiseEntry.tagebuchEintragId} setRating={setRating} />
                 </CollapseBody>
