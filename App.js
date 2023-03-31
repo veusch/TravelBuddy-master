@@ -47,11 +47,6 @@ const App = () => {
                   tagebuchEintragId: "44HoHtzUlV",
                   tagebuchEintragTime: "2023-03-26T17:13:09.962Z",
                   tagebuchEintragZiel: "",
-                  tagebuchEintragImages: [
-                    "file:///data/user/0/host.exp.exponent/cache/ImagePicker/e8c3b874-c104-43b7-8655-55d6633e8d31.jpeg",
-                    "file:///data/user/0/host.exp.exponent/cache/ImagePicker/7f2028e3-f239-4fe5-a8dc-bd31c8435369.jpeg",
-                    "file:///data/user/0/host.exp.exponent/cache/ImagePicker/d91e8a1d-3dcf-4649-b107-46178b1390c8.jpeg",
-                  ],
                   tagebucheintragTitle: "Anreise",
                   tagebucheintragBody:
                     "Heute sind wir endlich in Barcelona angekommen! Unser Flug hat um 21:25 am Aeroport de Barcelona-El Prat gelandet und wir haben uns danach sofort auf die Suche nach einem Öffi-Ticket gemacht. Es war gar nicht so einfach, aber wir haben es schlussendlich geschafft. Unser Airbnb-Zimmer ist ziemlich klein, aber wir haben uns trotzdem kurzzeitig niedergelassen und sind dann direkt losgezogen, um die Stadt zu erkunden. Zuallererst haben wir eine Schüssel Ramen gegessen und uns gestärkt, bevor wir uns auf den Weg zum Strand gemacht haben. Wir sind eine Weile am Wasser entlang spaziert und haben dabei drei nette Schweizer kennengelernt. Schließlich sind wir zurück zum Apartment gegangen, um uns auszuruhen und den Tag Revue passieren zu lassen. Ich bin schon gespannt, was uns morgen alles erwartet!",

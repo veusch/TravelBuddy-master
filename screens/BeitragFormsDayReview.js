@@ -131,8 +131,6 @@ export default function RevieForm2({ addEntry, navigation, setModalOpen }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
     backgroundColor: "white",
   },
 

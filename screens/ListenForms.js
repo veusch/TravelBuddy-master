@@ -5,7 +5,7 @@ import { Formik } from "formik";
 import * as yup from "yup";
 
 const schema = yup.object({
-  taskListTitle: yup.string().required().min(4),
+  Name: yup.string().required().min(4),
 });
 
 export default function ListenForms({ addTask, setModalOpen }) {
@@ -15,7 +15,7 @@ export default function ListenForms({ addTask, setModalOpen }) {
     <View style={globalStyles.container}>
       <Text style={globalStyles.headline}>Neue Liste{"\n"}erstellen</Text>
       <Formik
-        initialValues={{ taskListTitle: "" }}
+        initialValues={{ Name: "" }}
         validationSchema={schema}
         onSubmit={(values, actions) => {
           addTask(values);
@@ -26,9 +26,9 @@ export default function ListenForms({ addTask, setModalOpen }) {
           <View style={styles.WRapperR}>
             <View style={globalStyles.WrapperForms}>
               <View style={globalStyles.InputForms}>
-                <TextInput style={globalStyles.input} onBlur={probs.handleBlur("taskListTitle")} placeholder="Name der Liste" onChangeText={probs.handleChange("taskListTitle")} value={probs.values.taskListTitle} />
+                <TextInput style={globalStyles.input} onBlur={probs.handleBlur("Name")} placeholder="Name der Liste" onChangeText={probs.handleChange("Name")} value={probs.values.Name} />
               </View>
-              <Text style={globalStyles.errorNachricht}>{probs.touched.taskListTitle && probs.errors.taskListTitle}</Text>
+              <Text style={globalStyles.errorNachricht}>{probs.touched.Name && probs.errors.Name}</Text>
             </View>
             <View style={globalStyles.ButtonFlex}>
               <TouchableOpacity

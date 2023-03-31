@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { SafeAreaView, View, Text, StyleSheet, Platform, TextInput, TouchableOpacity, KeyboardAvoidingView, Image, ScrollView } from "react-native";
+import { View, Text, StyleSheet, Platform, TextInput, TouchableOpacity, KeyboardAvoidingView, Image, ScrollView } from "react-native";
 import { storeContext } from "../App";
 import { generateId } from "../util/generateId";
 import AsyncStorage from "@react-native-async-storage/async-storage";
@@ -56,7 +56,7 @@ export default function TaskItems(props) {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <View style={{ flex: 1 }}>
       <View style={styles.container}>
         <Image
           style={{ position: "absolute", opacity: 0.2, resizeMode: "cover", top: 0, left: 0, width: "100%", height: "100%", zIndex: -100 }}
@@ -127,7 +127,7 @@ export default function TaskItems(props) {
           <Image source={require("../images/profil.png")} style={globalStyles.iconNavigator} />
         </TouchableOpacity>
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 

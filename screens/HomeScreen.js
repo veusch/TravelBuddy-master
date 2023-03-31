@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect, Component } from "react";
 import AsyncStorage from "@react-native-async-storage/async-storage";
-import { View, Text, StyleSheet, Modal, Button, TouchableOpacity, TouchableWithoutFeedback, Keyboard, ScrollView, Image } from "react-native";
+import { View, Text, StatusBar, StyleSheet, Modal, Button, TouchableOpacity, TouchableWithoutFeedback, Keyboard, ScrollView, Image } from "react-native";
 import RevieForm from "./BeitragForms";
 import { globalStyles } from "../styles/global";
 import { storeContext } from "../App";
@@ -85,6 +85,7 @@ const HomeScreen = (props) => {
 
   return (
     <View style={styles.container}>
+      <StatusBar translucent={true} />
       <Image
         style={{ position: "absolute", opacity: 0.25, resizeMode: "cover", top: 0, left: 0, width: "100%", height: "100%", zIndex: -100 }}
         source={
@@ -204,13 +205,13 @@ const HomeScreen = (props) => {
 
 export default copilot({
   animated: true, // Can be true or false
-  overlay: "svg", // Can be either view or svg
+  overlay: "view", // Can be either view or svg
 
   labels: {
-    previous: "Vorheriger",
-    next: "Nächster",
-    skip: "Überspringen",
-    finish: "Beenden",
+    previous: "Back",
+    next: "Next",
+    skip: "Skip",
+    finish: "Close",
   },
 })(HomeScreen);
 const styles = StyleSheet.create({

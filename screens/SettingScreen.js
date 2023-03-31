@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect, Switch } from "react";
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, ScrollView, Image } from "react-native";
+import { View, Text, StatusBar, StyleSheet, TextInput, TouchableOpacity, ScrollView, Image } from "react-native";
 import UploadImage from "./UploadImagee";
 import { globalStyles } from "../styles/global";
 import { storeContext } from "../App";
@@ -26,6 +26,7 @@ const SettingScreen = (props) => {
 
   return (
     <View style={styles.container}>
+      <StatusBar translucent={true} />
       <Image
         style={{ position: "absolute", opacity: 0.2, resizeMode: "cover", top: 0, left: 0, width: "100%", height: "100%", zIndex: -100 }}
         source={

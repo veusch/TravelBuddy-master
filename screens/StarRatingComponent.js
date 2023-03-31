@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
-import { StyleSheet, Text, View, SafeAreaView, TouchableWithoutFeedback, Animated } from "react-native";
+import { StyleSheet, Text, View, TouchableWithoutFeedback, Animated } from "react-native";
 import { MaterialIcons } from "@expo/vector-icons";
 
 export default function StarRatingg(props) {
@@ -36,7 +36,7 @@ export default function StarRatingg(props) {
   };
 
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <View style={{ flex: 1 }}>
       <View style={styles.container}>
         <View style={styles.stars}>
           <TouchableWithoutFeedback onPressIn={handlePressIn} onPressOut={handlePressOut} onPress={() => setStarRating(1)}>
@@ -66,7 +66,7 @@ export default function StarRatingg(props) {
           </TouchableWithoutFeedback>
         </View>
       </View>
-    </SafeAreaView>
+    </View>
   );
 }
 

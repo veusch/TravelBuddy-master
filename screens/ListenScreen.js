@@ -64,7 +64,7 @@ export default function ListenScreen({ navigation }) {
               <TouchableOpacity key={taskList.taskListId} onPress={() => navigation.navigate("ListeNeu", { taskListId: taskList.taskListId })}>
                 <ListenCard>
                   <View style={styles.wrapper}>
-                    <Text style={{ fontFamily: "Regular", marginRight: 30, marginLeft: 10 }}>{taskList.taskListTitle}</Text>
+                    <Text style={{ fontFamily: "Regular", marginRight: 30, marginLeft: 10 }}>{taskList.Name}</Text>
                     <TouchableOpacity onPress={() => completeTask(taskList.taskListId)}>
                       <Image source={require("../images/delete.png")} style={styles.icon}></Image>
                     </TouchableOpacity>

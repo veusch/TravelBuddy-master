@@ -30,7 +30,7 @@
   "taskContext": [
     {
       "taskListId": "abc",
-      "taskListTitle": "Titel",
+      "Name": "Titel",
       "taskListItems": [
         { "taskId": "abc", "taskTitle": "Titel", "done": false },
         { "taskId": "abc", "taskTitle": "Titel", "done": false }
