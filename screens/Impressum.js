@@ -34,11 +34,11 @@ export default function Impressum() {
           Angaben gem. § 5 TMG{"\n"}
           <Text style={globalStyles.impBold}>Vorname, Name:</Text> <Text style={globalStyles.impLight}>Verena Eusch </Text>
           {"\n"}
-          <Text style={globalStyles.impBold}>Adresse:</Text> Baumfeldweg 12 {"\n"}
+          <Text style={globalStyles.impBold}>Adresse:</Text> Schönfeldweg 2 {"\n"}
           <Text style={globalStyles.impBold}>PLZ:</Text> 5020 Salzburg {"\n"} {"\n"}
-          <Text style={globalStyles.impBold}>Telefon:</Text> +43664/657955 {"\n"}
+          <Text style={globalStyles.impBold}>Telefon:</Text> +43 67761312302 {"\n"}
           <Text style={globalStyles.impBold}>Fax:{"\n"}</Text>
-          <Text style={globalStyles.impBold}>Mail:</Text> diplomprojekt@htl-salzburg.ac.at {"\n"}
+          <Text style={globalStyles.impBold}>Mail:</Text> Verena.eusch@gmail.com {"\n"}
           {"\n"}
           <Text style={globalStyles.impBold}>Umsatzsteuer-ID {"\n"}</Text> {"\n"}
           <Text style={globalStyles.impBold}>Umsatzsteuer-Identifikationsnummer</Text>

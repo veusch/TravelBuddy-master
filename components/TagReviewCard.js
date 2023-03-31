@@ -77,26 +77,28 @@ export default function TagReviewCard(props) {
     forceUpdate();
   };
 
+  handleImageSize = () => {};
+
   const defaultReisenImages = (eintragId) => {
     switch (reiseTagId) {
       case "mKVZUHJTSH":
         return eintragId === "44HoHtzUlV" ? (
           // Bilder vom ersten Tag erster Tagebucheintrag
           <>
-            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
-            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr.png")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/city.jpg")} />
           </>
         ) : eintragId === "duC9h4bveJ" ? (
           // Bilder vom ersten Tag zweiter Tagebucheintrag
           <>
-            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
-            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/markt.jpg")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/city2.jpg")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/schaf.jpg")} />
           </>
-        ) : eintragId === "bLQxePLuK2" ? (
+        ) : eintragId === "duC9t4bveJ" ? (
           // Bilder vom ersten Tag dritter Tagebucheintrag
           <>
-            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
-            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/strand.jpg")} />
           </>
         ) : null;
         break;
@@ -104,29 +106,45 @@ export default function TagReviewCard(props) {
         return eintragId === "1h5j3d9hcu" ? (
           // Bilder vom zweiten Tag erster Tagebucheintrag
           <>
-            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
-            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/aqua.jpg")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/aqua2.jpg")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/aqua3.jpg")} />
           </>
-        ) : eintragId === "J7gU44Fghz" ? (
+        ) : eintragId === "J7gU54Fghz" ? (
           // Bilder vom zweiten Tag zweiter Tagebucheintrag
           <>
-            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/city.jpg")} />
+          </>
+        ) : null;
+        break;
+      case "zSiKCBsZNy":
+        return eintragId === "1h5i3d9hcu" ? (
+          // Bilder vom dritten Tag erster Tagebucheintrag
+          <>
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/sagra.jpg")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/sagra2.jpg")} />
+          </>
+        ) : eintragId === "1h5i3p9hcu" ? (
+          // Bilder vom dritten Tag zweiter Tagebucheintrag
+          <>
             <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
           </>
         ) : null;
         break;
-      case "UkH7vq8mEW":
-        return eintragId === "djue67d6hD" ? (
-          // Bilder vom dritten Tag erster Tagebucheintrag
+      case "zSiKCBsZPy":
+        return eintragId === "1h1i3d9hcu" ? (
+          // Bilder vom vorletzten Tag erster Tagebucheintrag
           <>
-            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
-            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/strand2.jpg")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/strand3.jpg")} />
           </>
-        ) : eintragId === "j3hg7HUi4a" ? (
-          // Bilder vom dritten Tag zweiter Tagebucheintrag
+        ) : null;
+        break;
+      case "URB7vq8mEW":
+        return eintragId === "j3hg7PUi4a" ? (
+          // Bilder vom letzten Tag erster Tagebucheintrag
           <>
-            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
-            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/nr2.png")} />
+            <Image style={{ margin: 10, height: 270, width: 200 }} source={require("../images/demo/flug.jpg")} />
           </>
         ) : null;
         break;
@@ -184,11 +202,18 @@ export default function TagReviewCard(props) {
                     </Text>
                   </View>
                 </CollapseHeader>
+
                 <CollapseBody style={styles.collapse}>
                   <Text style={styles.zusammenfassung2}>{new Date(reiseEntry.tagebuchEintragTime).toLocaleTimeString("en-US")} Uhr</Text>
                   <Text style={styles.zusammenfassung2}>{reiseEntry.tagebucheintragBody}</Text>
                   <View style={{ alignItems: "center" }}>
-                    {reiseId === "Iyxnkg6cLQ" ? defaultReisenImages(reiseEntry.tagebuchEintragId) : reiseEntry?.tagebuchEintragImages?.map((image) => <Image key={image} style={{ margin: 10, height: 270, width: 200 }} source={{ uri: image }} />)}
+                    {reiseId === "Iyxnkg6cLQ"
+                      ? defaultReisenImages(reiseEntry.tagebuchEintragId)
+                      : reiseEntry?.tagebuchEintragImages?.map((image) => (
+                          <TouchableOpacity onPress={handleImageSize}>
+                            <Image key={image} style={{ margin: 10, height: 270, width: 200 }} source={{ uri: image }} />
+                          </TouchableOpacity>
+                        ))}
                   </View>
                   <StarRatingg forceUpdate={forceUpdate} defaultRating={reiseEntry.rating ?? 0} tagebuchEintragId={reiseEntry.tagebuchEintragId} setRating={setRating} />
                 </CollapseBody>

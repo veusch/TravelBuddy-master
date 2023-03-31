@@ -78,7 +78,7 @@ export default function TaskItems(props) {
         />
         <ScrollView>
           <View style={styles.tasksWrapper}>
-            <Text style={styles.sectionTitle}>{tasks.find((taskList) => taskList.taskListId === taskListId)?.taskListTitle}</Text>
+            <Text style={styles.sectionTitle}>{tasks.find((taskList) => taskList.taskListId === taskListId)?.Name}</Text>
 
             <View style={styles.items}>
               {tasks

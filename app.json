@@ -9,7 +9,7 @@
       ]
     ],
     "name": "TravelBuddy",
-    "slug": "traveli",
+    "slug": "travelbuddy",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/logo.png",
@@ -22,7 +22,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.veusch.TravelBuddy"
@@ -32,7 +34,9 @@
         "foregroundImage": "./assets/logo.png",
         "backgroundColor": "#ffffff"
       },
-      "permissions": ["android.permission.RECORD_AUDIO"],
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
       "package": "com.veusch.TravelBuddy"
     },
     "web": {
@@ -40,9 +44,9 @@
     },
     "extra": {
       "eas": {
-        "projectId": "48aeaba5-b0f8-489c-9ead-3a95257bdd35"
+        "projectId": "cf0c6ddc-aad2-48d3-8129-23394e1cf933"
       }
     },
-    "owner": "moisch"
+    "owner": "verenaeusch"
   }
 }

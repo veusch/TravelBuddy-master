@@ -14,7 +14,11 @@ const HomeScreen = (props) => {
   const WalkthrouableText = walkthroughable(Text);
   const WalkthroughableImage = walkthroughable(Image);
   const defaultName = "Dein Name";
-
+  const style = {
+    backgroundColor: "#9FA8DA",
+    borderRadius: 10,
+    paddingTop: 5,
+  };
   const { reisenContext, backgroundContext, profileContext } = useContext(storeContext);
   const [reisen, setReisen] = reisenContext;
   const [profile, setProfile] = profileContext;
@@ -118,7 +122,7 @@ const HomeScreen = (props) => {
             <WalkthroughableImage source={require("../images/neu.png")} style={globalStyles.neu} />
           </CopilotStep>
         </TouchableOpacity>
-        <CopilotStep text="Das ist dein Benutzername. Ändere diesen in dem bei den Einstellungen du auf dein Name klickst" order={1} name="firstUniqueKey">
+        <CopilotStep text="Das ist dein Benutzername. Ändere diesen indem du bei den Einstellungen auf Dein Name klickst" order={1} name="firstUniqueKey">
           <WalkthrouableText default={"Dein Name"} style={styles.name}>
             <Text defaultValue={"Dein Name"}>{profile.profileName}</Text>
           </WalkthrouableText>
@@ -148,7 +152,7 @@ const HomeScreen = (props) => {
                 color: "orange",
               },
             ]}
-            length={200}
+            length={150}
           />
         </View>
 
@@ -158,7 +162,7 @@ const HomeScreen = (props) => {
               Du hast insgesamt <Text style={{ color: "orange", fontWeight: "bold" }}>{getTotalCountries()}/195 Länder </Text> bereist!
             </Text>
           </View>
-          <View style={styles.besucht}>
+          <View style={styles.besucht2}>
             <Text style={{ textAlign: "center", alignItems: "center", padding: 15, fontSize: 16 }}>
               Du warst insgesamt <Text style={{ color: "orange", fontWeight: "bold" }}>{getTotalDays()} Tage lang </Text> unterwegs!
             </Text>
@@ -181,20 +185,20 @@ const HomeScreen = (props) => {
         </TouchableOpacity>
         <TouchableOpacity onPress={() => props.navigation.navigate("Reisen")}>
           {/*Reisen*/}
-          <CopilotStep text="Schaue hier vorbei um deine Reisen zu verwalten" order={3} name="ThirdUniqueKey">
+          <CopilotStep text="Schaue hier vorbei, um deine Reisen zu verwalten" order={3} name="ThirdUniqueKey">
             <WalkthroughableImage source={require("../images/eintrag.png")} style={globalStyles.iconNavigator} />
           </CopilotStep>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => props.navigation.navigate("Listen")}>
           {/*Listen*/}
-          <CopilotStep text="Schaue hier vorbei um Reiselisten zu erstellen" order={4} name="FourthUniqueKey">
+          <CopilotStep text="Schaue hier vorbei, um Reiselisten zu erstellen" order={4} name="FourthUniqueKey">
             <WalkthroughableImage source={require("../images/liste.png")} style={globalStyles.iconNavigator} />
           </CopilotStep>
         </TouchableOpacity>
 
         <TouchableOpacity onPress={() => props.navigation.navigate("settings")}>
           {/*Settings*/}
-          <CopilotStep text="Schaue hier vorbei um dein Profil zu verwalten" order={5} name="FithUniqueKey">
+          <CopilotStep text="Schaue hier vorbei, um dein Profil zu verwalten" order={5} name="FithUniqueKey">
             <WalkthroughableImage source={require("../images/profil.png")} style={globalStyles.iconNavigator} />
           </CopilotStep>
         </TouchableOpacity>
@@ -206,6 +210,10 @@ const HomeScreen = (props) => {
 export default copilot({
   animated: true, // Can be true or false
   overlay: "view", // Can be either view or svg
+
+  tooltipStyle: {
+    borderRadius: 10,
+  },
 
   labels: {
     previous: "Back",
@@ -245,7 +253,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
 
     width: 340,
-    height: 210,
+    height: 180,
     backgroundColor: "#EFF8FF",
     alignSelf: "center",
     borderRadius: 10,
@@ -254,8 +262,18 @@ const styles = StyleSheet.create({
   besucht: {
     marginTop: 20,
     marginBottom: 20,
-    margin: 5,
+    marginRight: 15,
+    width: 150,
+    height: 130,
+    backgroundColor: "#EFF8FF",
+    alignSelf: "center",
+    borderRadius: 10,
+  },
 
+  besucht2: {
+    marginTop: 20,
+    marginBottom: 20,
+    marginLeft: 15,
     width: 150,
     height: 130,
     backgroundColor: "#EFF8FF",

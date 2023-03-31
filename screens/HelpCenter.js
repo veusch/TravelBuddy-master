@@ -42,7 +42,7 @@ export default function HelpCenter() {
             </CollapseHeader>
 
             <CollapseBody style={styles.collapse}>
-              <Text style={styles.zusammenfassung}>Wenn du am Home-Screen nach unten scrollst findest du den Button „Neues Tagebuch erstellen“. </Text>
+              <Text style={styles.zusammenfassung}>Wenn du am Home-Screen nach unten scrollst findest du den Button „Neues Tagebuch erstellen“ oder über das kleine Plus rechts oben in der Ecke. </Text>
             </CollapseBody>
           </Collapse>
         </View>
@@ -56,21 +56,7 @@ export default function HelpCenter() {
             </CollapseHeader>
 
             <CollapseBody style={styles.collapse}>
-              <Text style={styles.zusammenfassung}>Einen neuen Eintrag kannst du entweder auf der Einträge-Seite über dass kleine Plus rechts oben erstellen, oder ganz einfach direkt in einem Tagebuch.</Text>
-            </CollapseBody>
-          </Collapse>
-        </View>
-
-        <View style={styles.wrapper}>
-          <Collapse>
-            <CollapseHeader>
-              <View>
-                <Text style={styles.titelTagNotiz}>Wie bearbeite ich einen Beitrag</Text>
-              </View>
-            </CollapseHeader>
-
-            <CollapseBody style={styles.collapse}>
-              <Text style={styles.zusammenfassung}>Wenn du gerade einen Eintrag geöffnet hast, siehst du rechts oben einen kleinen weißen Pfeil — so kannst du deine Einträge im Nachhinein noch bearbeiten.</Text>
+              <Text style={styles.zusammenfassung}>Einen neuen Eintrag kannst du entweder auf der Einträge-Seite über das kleine Plus rechts oben erstellen, oder ganz einfach direkt in einem Tagebuch.</Text>
             </CollapseBody>
           </Collapse>
         </View>
@@ -97,7 +83,7 @@ export default function HelpCenter() {
             </CollapseHeader>
 
             <CollapseBody style={styles.collapse}>
-              <Text style={styles.zusammenfassung}>Eine neue Liste kannst du dem Listen-Screen über dass kleine Plus rechts oben erstellen.</Text>
+              <Text style={styles.zusammenfassung}>Eine neue Liste kannst du bei dem Listenbildschirm über das kleine Plus rechts oben erstellen.</Text>
             </CollapseBody>
           </Collapse>
         </View>

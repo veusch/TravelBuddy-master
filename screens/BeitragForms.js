@@ -83,7 +83,7 @@ export default function RevieForm({ addJourney, setModalOpen }) {
             <View style={globalStyles.InputForms}>
               <TextInput
                 style={globalStyles.InputForms}
-                placeholder="Name"
+                placeholder="Reisetitel"
                 multiline
                 maxLength={30}
                 onChangeText={(e) => {

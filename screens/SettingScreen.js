@@ -163,12 +163,14 @@ const SettingScreen = (props) => {
 export default copilot({
   animated: true, // Can be true or false
   overlay: "svg", // Can be either view or svg
-
+  tooltipStyle: {
+    borderRadius: 10,
+  },
   labels: {
-    previous: "Vorheriger",
-    next: "Nächster",
-    skip: "Überspringen",
-    finish: "Beenden",
+    previous: "Back",
+    next: "Next",
+    skip: "Skip",
+    finish: "Close",
   },
 })(SettingScreen);
 const styles = StyleSheet.create({
